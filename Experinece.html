@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Syed Faheem Shah Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        nav h1 {
+            margin: 0;
+            padding: 20px 0 15px 0;
+            color: #00ffff;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0 0 15px 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #cbd5e1;
+            padding: 8px 18px;
+            font-weight: 600;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav li a:hover,
+        nav li a.active {
+            color: #000;
+            background: #00ffff;
+            box-shadow: 0 0 15px #00ffff;
+            transform: translateY(-2px);
+        }
+
+        .exp-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px 60px 20px;
+        }
+
+        .exp-section h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #00ffff;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+            margin-bottom: 30px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .job {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 6px solid #00ffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .job:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .job:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .job:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .job:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        .job:hover {
+            transform: translateY(-6px) scale(1.01);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 255, 255, 0.3);
+            border-left-width: 10px;
+        }
+
+        .job h3 {
+            margin: 0 0 5px 0;
+            color: #00ffff;
+            font-size: 1.4rem;
+        }
+
+        .date {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .job p {
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>MY PORTFOLIO</h1>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Experinece.html" class="active">Experience</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="exp-section">
+        <h2>Work Experience</h2>
+
+        <div class="job">
+            <h3>Scanning Operator</h3>
+            <span class="date">Indus Auto Mobile Spare Parts (Feb 2025 - Present)</span>
+            <p>
+                Managed scanning and digital documentation of automotive spare parts. <br><br>
+                Maintained Bin Cards and inventory records (manual & system). <br><br>
+                Performed data entry, data import/export, and record management. <br><br>
+                Verified and updated records as a Super User, ensuring data accuracy.
+            </p>
+        </div>
+
+        <div class="job">
+            <h3>Customer Relationship Officer (Intern)</h3>
+            <span class="date">Cyber Track Solutions (Sept 2024 - Dec 2024)</span>
+            <p>
+                Handled customer inquiries, resolved issues promptly, and assisted in implementing customer retention
+                strategies.
+            </p>
+        </div>
+
+        <div class="job">
+            <h3>Data Entry Operator</h3>
+            <span class="date">Assets Linkers (May 2023 - Jun 2024)</span>
+            <p>
+                Managed asset-related data, ensuring accurate records, organized databases, and streamlined data entry
+                workflows.
+            </p>
+        </div>
+
+        <div class="job">
+            <h3>Administrator at Jinnah Collegiate</h3>
+            <span class="date">Assets Linkers (Apr 2020 - Apr 2024)</span>
+            <p>
+                Oversaw daily operations, managed student affairs, coordinated events, and facilitated efficient
+                communication across the institution.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

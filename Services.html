@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Syed Faheem Shah Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #f8fafc;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        nav h1 {
+            margin: 0;
+            padding: 20px 0 15px 0;
+            color: #00ffff;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0 0 15px 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #cbd5e1;
+            padding: 8px 18px;
+            font-weight: 600;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav li a:hover,
+        nav li a.active {
+            color: #000;
+            background: #00ffff;
+            box-shadow: 0 0 15px #00ffff;
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 2.2rem;
+            color: #00ffff;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .container {
+            padding: 20px 40px 60px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 30px 20px;
+            border-radius: 15px;
+            width: 280px;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .card:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .card:nth-child(3) {
+            animation-delay: 0.5s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(0, 255, 255, 0.5);
+            border-color: #00ffff;
+        }
+
+        .card h3 {
+            color: #00ffff;
+            font-size: 1.3rem;
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>MY PORTFOLIO</h1>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Services.html" class="active">Services</a></li>
+            <li><a href="Experinece.html">Experience</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+
+    <h2>My Services & Skills</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Front-End Development</h3>
+            <p>Creating clean, responsive web designs using HTML, CSS & JavaScript.</p>
+        </div>
+        <div class="card">
+            <h3>Graphic Designing</h3>
+            <p>Designing professional banners, posts, and layouts using Canva.</p>
+        </div>
+        <div class="card">
+            <h3>Documentation</h3>
+            <p>Data Entry, Microsoft Office solutions, and digital record keeping.</p>
+        </div>
+    </div>
+</body>
+
+</html>
